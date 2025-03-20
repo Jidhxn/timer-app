@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep Timer App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center;">Prep Timer</h1>
+      
+      <div class="preset-controls">
+        <label for="preset">Timer (seconds):</label>
+        <input type="number" id="preset" value="60">
+        <button id="setPreset">Set</button>
+      </div>
+
+      <div class="mode" id="mode">Start</div>
+      <div class="timer" id="timerDisplay">60</div>
+
+      <div class="controls">
+        <div class="button-row">
+          <button id="nextBtn">Next Question</button>
+          <button id="coolOffBtn">Check Answer</button>
+        </div>
+        <button id="stopBtn" class="full-width">End Session</button>
+      </div>
+
+      <div id="summary"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
